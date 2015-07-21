@@ -11,13 +11,18 @@ program
 .usage('[options] <file ...>')
 .option('-s, --source [value]', 'Set source video path.')
 .option('-d, --destination [value]', 'Set screen grabs destination path.')
-.option('-q, --quantity <n>', 'Set the desired screengrabs quantity.')
+.option('-q, --quantity <n>', 'Set the desired screen grabs quantity.')
 .parse(process.argv);
 
-console.log(('Node Screen Graber v' + pjson.version).rainbow);
+console.log(('Node Screen Graber v' + pjson.version).rainbow, '\n');
 
 if (!program.source) {
   console.log('[ERROR] Missing source parametter (-s or --source)'.red);
+  return;
+}
+
+if (!program.destination) {
+  console.log('[ERROR] Missing destination parametter (-d or --destination)'.red);
   return;
 }
 
