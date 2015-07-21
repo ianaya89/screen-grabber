@@ -1,6 +1,6 @@
 # screen-graber
 
-NodeJS tool to create screen grabs from videos.
+Command line tool to create screen grabs from videos.
 
 ### Installation
 
