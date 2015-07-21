@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+var program = require('commander');
+var colors = require('colors');
+var path = require('path');
+var fs = require('fs');
+var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+var pjson = require('../package.json');
+
+program
+.version(pjson.version)
+.usage('[options] <file ...>')
+.option('-s, --source [value]', 'Set source video path.')
+.option('-d, --destination [value]', 'Set screen grabs destination path.')
+.option('-q, --quantity <n>', 'Set the desired screengrabs quantity.')
+.parse(process.argv);
+
+console.log(('Node Screen Graber v' + pjson.version).rainbow);
+
+if (!program.source) {
+  console.log('[ERROR] Missing source parametter (-s or --source)'.red);
+  return;
+}
+
+require(lib + '/screen-graber.js').start(program, colors, fs);
