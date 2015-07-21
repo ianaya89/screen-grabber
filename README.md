@@ -28,6 +28,12 @@ Setting the screen grabs quantity ```-q```, the default value is 10.
 screen-graber -s "my/video/path" -d "my/screen/grabs/path" -q 17
 ```
 
+### Output
+
+<p style="text-align: center">
+  <img src="img/output.png" alt="output">
+</p>
+
 ### TODO
 By the moment you can not choose the frame or time of the desired screen grab.
 
