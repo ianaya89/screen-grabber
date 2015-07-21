@@ -9,8 +9,8 @@ var pjson = require('../package.json');
 program
 .version(pjson.version)
 .usage('[options] <file ...>')
-.option('-s, --source [value]', 'Set source video path.')
-.option('-d, --destination [value]', 'Set screen grabs destination path.')
+.option('-s, --source [value]', 'Set source video path. (required)')
+.option('-d, --destination [value]', 'Set screen grabs destination path. (required)')
 .option('-q, --quantity <n>', 'Set the desired screen grabs quantity.')
 .parse(process.argv);
 
