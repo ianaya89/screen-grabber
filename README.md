@@ -3,6 +3,7 @@
 Command line tool to create screen grabs from videos.
 
 <img src='https://david-dm.org/ianaya89/screen-grabber.svg'/>
+[![npm version](https://badge.fury.io/js/screen-graber.svg)](http://badge.fury.io/js/screen-graber)
 
 ### Installation
 
