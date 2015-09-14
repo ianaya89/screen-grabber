@@ -2,7 +2,7 @@
 
 Command line tool to create screen grabs from videos.
 
-<img src='https://david-dm.org/ianaya89/screen-graber.svg'/>
+<img src='https://david-dm.org/ianaya89/screen-grabber.svg'/>
 
 ### Installation
 
